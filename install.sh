@@ -2,15 +2,14 @@
 
 ## install script. run once only. ##
 
-echo "#### bbkinstall: added by bk ####"
 
 # add bbk function that handles all your bookmarks!
 
-cat <<HEREDOC >> bashrc
+cat <<HEREDOC >> ~/.bashrc
+#### bbkinstall: added by bk ####
 function bbk {
-	cd ${bbk[$1]}
+	cd \${bbk[\$1]}
 }
 HEREDOC
 
-
-
+echo "Installation finished."
